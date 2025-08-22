@@ -1,6 +1,5 @@
 <?php 
 /*
-
 ----------------------------------------------------------MODULE 1 - Core PHP-----------------------------------------------------------
 
 1) PHP syntax:-
@@ -73,13 +72,12 @@
                             ehco "Hello, World!";
 
                     ?>
-
-
-
-
                                 
 
-2) 
+2) PHP Variables:-
+    
+    THEORY EXERCISE:
+            i)Explain the concept of variables in PHP and their scope
 
 
 
@@ -90,8 +88,6 @@
 
 
 */
-
-
 
 
 ?>
