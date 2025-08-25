@@ -101,9 +101,9 @@
                             Ex.
                                function test() {
                                     $x = 10; // local variable
-                                    echo $x; // ✅ accessible
+                                    echo $x; //  accessible
                                 }
-                                // echo $x; ❌ not accessible here
+                                // echo $x;  not accessible here
 
                            (2) Global Scope:
                                  --> Declared outside of functions.
@@ -112,7 +112,7 @@
                                 $y = 20; // global variable
                                 function show() {
                                     global $y;
-                                    echo $y; // ✅ accessible because of 'global'
+                                    echo $y; //  accessible because of 'global'
                                 }
 
                            (3) Static Scope:
