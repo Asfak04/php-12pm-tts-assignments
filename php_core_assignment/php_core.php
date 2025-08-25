@@ -250,6 +250,133 @@
                     </body>
                     </html>
 
+4) Conditions:-
+   THEORY EXERCISE:
+             (1) Explain how conditional statements work in PHP.
+                 --> Conditional statements are used to make decisions in a PHP program.
+                 --> They allow code to execute only if a certain condition is true.
+                 (i) if statement:
+                    --> Executes a block of code if the condition is true.
+                    <?php
+                        $age = 20;
+
+                        if ($age >= 18) {
+                            echo "You are an adult.";
+                        }
+                    ?>
+                    Output: You are an adult.
+                  
+                 (ii) if...else Statement:
+                    --> Executes one block if the condition is true, another block if it is false.
+                    <?php
+                        $age = 16;
+
+                        if ($age >= 18) {
+                            echo "You are an adult.";
+                        } else {
+                            echo "You are a minor.";
+                        }
+                    ?> 
+                    Output: You are a minor.
+                  
+                 (iii) if...elseif...else Statement:
+                    --> Used to check multiple conditions.
+                    <?php
+                        $marks = 75;
+
+                        if ($marks >= 90) {
+                            echo "Grade: A";
+                        } elseif ($marks >= 75) {
+                            echo "Grade: B";
+                        } elseif ($marks >= 50) {
+                            echo "Grade: C";
+                        } else {
+                            echo "Fail";
+                        }
+                    ?>
+                    Output: Grade: B
+                  
+                 (iv) switch Statement:
+                    --> sed when you want to compare one variable against many possible values.
+                    <?php
+                        $color = "red";
+
+                        switch ($color) {
+                            case "red":
+                                echo "You chose red!";
+                                break;
+                            case "green":
+                                echo "You chose green!";
+                                break;
+                            case "blue":
+                                echo "You chose blue!";
+                                break;
+                            default:
+                                echo "Unknown color.";
+                        }
+                    ?>
+                    Output: You chose red!
+
+                   (v) Ternary Operator (Short if...else):
+                    --> A shorthand for simple conditions.
+                    <?php
+                        $age = 20;
+                        echo ($age >= 18) ? "Adult" : "Minor";
+                    ?>
+                    Output: Adult
+
+
+ 5) If Condition and If-Else If:
+    LAB EXERCISE:
+             (1) Write a PHP program to determine if a number is even or odd using if conditions.
+                 <?php 
+                    $num = 5;
+                    if($num % 2 == 0 ){
+
+                        echo $num  . " is even";    
+                    }else{
+                        echo $num . " is odd"
+                    }
+                 
+                 ?>
+ 
+ 6) Practical Example: Calculator and Day Finder:
+      LAB EXERCISE:  
+            (1) Simple Calculator: Create a calculator using if-else conditions that takes twoinputsand an operator (+, -, *, /).
+                  <?php
+                    // Inputs
+                    $num1 = 20;
+                    $num2 = 5;
+                    $operator = "+"; // change this to +, -, *, /
+
+                    if ($operator == "+") {
+                        echo "$num1 + $num2 = " . ($num1 + $num2);
+                    } elseif ($operator == "-") {
+                        echo "$num1 - $num2 = " . ($num1 - $num2);
+                    } elseif ($operator == "*") {
+                        echo "$num1 * $num2 = " . ($num1 * $num2);
+                    } elseif ($operator == "/") {
+                        if ($num2 != 0) {
+                            echo "$num1 / $num2 = " . ($num1 / $num2);
+                        } else {
+                            echo "Error: Division by zero not allowed.";
+                        }
+                    } else {
+                        echo "Invalid operator!";
+                    }
+                 ?>
+
+            (2) Day Finder: Write a script that finds the current day. If it is Sunday, print "HappySunday."
+                 <?php
+                    // Get current day name
+                    $day = date("l"); // "l" (lowercase L) gives full day name (e.g., Sunday, Monday)
+
+                    if ($day == "Sunday") {
+                        echo "HappySunday.";
+                    } else {
+                        echo "Today is $day.";
+                    }
+                 ?>
 
 
 */
